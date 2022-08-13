@@ -1,0 +1,73 @@
+.header {
+  background-color: $midnight-green;
+  &__content {
+    width: $main-width;
+    margin: auto;
+    // height: 19.4rem;
+    padding: 7.3rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: $max-width;
+  }
+
+  &__logo {
+    width: 16rem;
+    height: 4rem;
+    // background-color: red;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 0 8rem;
+  }
+
+  &__nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__nav-link {
+    padding: 0 4rem 0 0;
+  }
+
+  &__link {
+    font-size: $sm-font-size;
+    font-weight: $sm-font-weight;
+    color: $white;
+  }
+
+  &__contact-btn {
+    font-size: $sm-font-size;
+    font-weight: $sm-font-weight;
+    background: none;
+    color: $white;
+    border: 0.2rem solid $white;
+    width: 15rem;
+    height: 5rem;
+    border-radius: 4rem;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+
+    &:hover {
+      background-color: $light-coral;
+    }
+  }
+
+  &__menu-btn {
+    background: none;
+    border: none;
+    font-size: 3rem;
+    color: $white;
+    display: none;
+  }
+}
+
+.link-page-active {
+  color: $light-coral;
+}

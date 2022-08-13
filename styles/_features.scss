@@ -1,0 +1,70 @@
+.features {
+  height: 68.4rem;
+  background-color: $sacramento-state-green;
+  position: relative;
+  overflow-x: hidden;
+
+  &__container {
+    width: $main-width;
+    max-width: $max-width;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    padding: 13.9rem 0 0 0;
+  }
+
+  &__col1 {
+    flex: 56.6rem;
+    .line {
+      height: 0.4rem;
+      width: 6rem;
+      background-color: $light-coral;
+      margin: 0 0 6rem 0;
+    }
+  }
+
+  &__col2 {
+    flex: 53.4rem;
+  }
+
+  &__title {
+    font-size: $md-lg-font-size;
+    color: $white;
+    font-weight: 600;
+    // width: 16ch;
+    line-height: 4.2rem;
+  }
+
+  &__card {
+    display: flex;
+    padding: 2rem 0;
+  }
+
+  &__card-icon {
+    padding: 0 2.3rem 0 0;
+  }
+
+  &__card-title {
+    font-size: 2rem;
+    color: $light-coral;
+    font-weight: 700;
+    padding: 0 0 2.3rem 0;
+  }
+
+  &__card-text {
+    font-size: 1.4rem;
+    color: $white;
+    // width: 54ch;
+    font-weight: $sm-font-weight;
+  }
+
+  .bg-home-3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(50%, 0);
+    z-index: 1;
+  }
+}

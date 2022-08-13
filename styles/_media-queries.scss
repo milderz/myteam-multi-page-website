@@ -1,0 +1,426 @@
+@media screen and (max-width: 1280px) {
+  .header {
+    &__content {
+      width: 90%;
+    }
+  }
+
+  .hero {
+    &__body {
+      width: 90%;
+    }
+  }
+
+  .clients {
+    &__container {
+      width: 90%;
+      img {
+        transform: scale(0.75);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 882px) {
+  .clients {
+    &__container {
+      img {
+        transform: scale(0.4);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .header {
+    &__content {
+      width: 90%;
+    }
+  }
+
+  .hero {
+    &__body {
+      width: 90%;
+      min-height: 64.3rem;
+      flex-direction: column;
+    }
+
+    &__col1 {
+      flex: 1;
+
+      height: 24.3rem;
+      justify-content: center;
+      align-items: flex-end;
+      text-align: center;
+    }
+
+    &__main-title {
+      font-size: 7rem;
+      width: 10ch;
+    }
+
+    &__p {
+      text-align: center;
+      padding: 3.6rem 0 0 0;
+    }
+
+    &__col2 {
+      flex: 1;
+      width: 100%;
+    }
+
+    .line {
+      display: none;
+    }
+
+    .bg-left-el {
+      display: none;
+    }
+
+    .bg-hero-r {
+      position: absolute;
+      bottom: 0;
+      right: 50%;
+      transform: translateX(50%);
+    }
+  }
+
+  .features {
+    min-height: 77rem;
+
+    &__container {
+      padding: 10rem 0 0 0;
+      flex-direction: column;
+      width: 90%;
+    }
+
+    &__col1 {
+      flex: 10.8rem;
+
+      .line {
+        margin: 0 0 4rem 0;
+      }
+    }
+
+    &__title {
+      width: auto;
+      font-size: 3.5rem;
+    }
+
+    &__col2 {
+      flex: 36.1rem;
+
+      padding: 0 0 0 3rem;
+      z-index: 2;
+    }
+  }
+
+  .testimonials {
+    height: 130rem;
+
+    &__container {
+      grid-template-columns: 1fr;
+    }
+
+    &__header-title {
+      font-size: 3.5rem;
+    }
+  }
+
+  .contact-banner {
+    &__content {
+      width: 74%;
+    }
+
+    &__title {
+      font-size: 3.5rem;
+    }
+  }
+
+  .footer {
+    height: 29.6rem;
+
+    &__content {
+      width: 90%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        "logo  address "
+        "nav  address "
+        "social  copy-text";
+    }
+
+    &__nav-links {
+      align-items: center;
+    }
+
+    &__social-links {
+      justify-content: start;
+      align-items: flex-end;
+    }
+
+    &__social-icon {
+      padding: 0 1.6rem 0 0;
+    }
+
+    &__address-info {
+      align-items: flex-end;
+    }
+  }
+
+  .about-hero {
+    &__content {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__col1 {
+      padding: 0 0 2rem 0;
+    }
+
+    &__col2 {
+      width: 90%;
+    }
+
+    &__title {
+      font-size: 3.5rem;
+    }
+
+    .line {
+      display: none;
+    }
+
+    &__text {
+      width: auto;
+    }
+  }
+
+  .directors {
+    &__grid {
+      width: 90%;
+    }
+  }
+
+  .clients {
+    min-height: 68.1rem;
+
+    &__title {
+      text-align: center;
+      font-size: 3.5rem;
+      z-index: 99;
+      padding: 0 0 7.4rem 0;
+    }
+
+    &__container {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 0 0 0;
+      height: 40.9rem;
+      img {
+        filter: none;
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    &__logo {
+      z-index: 100;
+    }
+    &__content {
+      padding: 5.4rem 0 0 0;
+    }
+
+    &__nav {
+      position: absolute;
+      right: 50%;
+      top: 18.4rem;
+      transform: translateX(50%);
+      width: 90%;
+      background-color: $light-coral;
+      z-index: 99;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 1rem;
+      padding: 2rem;
+
+      transition: opacity 0.4s ease;
+    }
+
+    &__nav-links {
+      flex-direction: column;
+
+      width: 90%;
+      margin: auto;
+    }
+    &__nav-link {
+      padding: 2rem 0;
+    }
+
+    &__menu-btn {
+      display: block;
+      z-index: 111;
+    }
+  }
+
+  .nav--active {
+    display: flex;
+    transition: opacity 0.4s ease;
+    animation: menu 0.4s ease;
+  }
+
+  @keyframes menu {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .hero {
+    height: 56.8rem;
+
+    &__body {
+      height: auto;
+    }
+
+    &__col1 {
+      height: 100px;
+      flex: 1;
+
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    &__col2 {
+      height: auto;
+      flex: 2;
+    }
+
+    &__main-title {
+      font-size: 4.6rem;
+      line-height: 4.5rem;
+    }
+  }
+
+  .features {
+    min-height: 107.2rem;
+    overflow: hidden;
+
+    &__container {
+      padding: 6.2rem 0 0 0;
+    }
+
+    &__title {
+      font-size: 3rem;
+      width: 20rem;
+      line-height: 3rem;
+    }
+
+    &__col1 {
+      flex: 1;
+    }
+
+    &__col2 {
+      flex: 3;
+      padding: 0;
+    }
+
+    .bg-home-3 {
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: translate(50%, 0);
+    }
+
+    &__card {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .testimonials {
+    height: 141rem;
+    &__header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__header-title {
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+      width: 18ch;
+      text-align: center;
+      padding: 14.1rem 0 0 0;
+    }
+
+    &__container {
+      width: 90%;
+    }
+  }
+
+  .contact-banner {
+    height: 30rem;
+    &__content {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+      padding: 0 0 3rem 0;
+    }
+  }
+
+  .clients {
+    min-height: 68.1rem;
+
+    &__title {
+      text-align: center;
+      font-size: 3.5rem;
+      z-index: 99;
+      padding: 0 0 7.4rem 0;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer {
+    height: 43.1rem;
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6.4rem 0;
+    }
+
+    &__address-info {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__social-links {
+      grid-area: social;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

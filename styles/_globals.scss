@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+/* Body set up */
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  letter-spacing: 1px;
+
+  font-family: "Livvic", sans-serif;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Forms */
+
+input,
+button,
+textarea,
+select,
+option {
+  font: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+// h1::selection,
+// h2::selection,
+// h3::selection,
+// h4::selection,
+// h5::selection,
+// p::selection {
+//   background-color: $light-coral;
+// }
+
+.filter-el--active {
+  filter: brightness(0.6);
+  transition: filter 0.4s ease;
+}

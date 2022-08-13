@@ -1,0 +1,82 @@
+.hero {
+  background-color: $midnight-green;
+  min-height: 58rem;
+
+  position: relative;
+  z-index: -2;
+
+  &__body {
+    width: $main-width;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 47rem;
+    max-width: $max-width;
+    z-index: 3;
+  }
+
+  &__col1 {
+    position: relative;
+    flex: 65.7rem;
+    // height: 100%;
+
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+  }
+
+  &__col2 {
+    flex: 44.9rem;
+    height: 19.1rem;
+
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  &__main-title {
+    font-size: $lrg-font-size;
+    font-weight: 800;
+    line-height: 8.8rem;
+    color: $white;
+
+    span {
+      color: $light-coral;
+    }
+  }
+
+  .bg-left-el {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -80%);
+    z-index: -1;
+  }
+
+  .line {
+    min-height: 0.4rem;
+    width: 6rem;
+    background-color: $rapture-blue;
+  }
+
+  &__p {
+    font-size: $sm-font-size;
+    color: $white;
+    font-weight: $sm-font-weight;
+    padding: 8.1rem 0 0 0;
+  }
+
+  .bg-hero-r {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.sctn {
+  height: 66.5rem;
+  background-color: $light-coral;
+}

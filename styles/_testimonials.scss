@@ -1,0 +1,100 @@
+.testimonials {
+  // height: 66.5rem;
+  background-color: $midnight-green;
+  position: relative;
+
+  &__header {
+    width: 100%;
+  }
+
+  &__header-title {
+    text-align: center;
+    font-size: $md-lg-font-size;
+
+    padding: 14.7rem 0 0 0;
+    line-height: 4.8rem;
+    color: $white;
+
+    span {
+      color: $rapture-blue;
+    }
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 7rem 0 0 0;
+    width: $main-width;
+    max-width: $max-width;
+    grid-gap: 5rem;
+    margin: auto;
+    padding: 7rem 0 14.8rem 0;
+  }
+
+  &__card {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__avatar-container {
+    height: 6.5rem;
+    width: 6.5rem;
+    background-color: $rapture-blue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__card-avatar {
+    height: 6rem;
+    border-radius: 50%;
+  }
+
+  &__card-text {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: $white;
+
+    text-align: center;
+    z-index: 2;
+  }
+
+  &__card-name {
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: $rapture-blue;
+    padding: 3.4rem 0 1.6rem 0;
+  }
+
+  &__card-job-title {
+    font-size: 1.4rem;
+    color: $white;
+    padding: 0 0 3.1rem 0;
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .icon-quotes {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+}
+
+.bg-t-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bg-t-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

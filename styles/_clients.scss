@@ -1,0 +1,63 @@
+.clients {
+  background-color: $sacramento-state-green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+  &__title {
+    font-size: $md-lg-font-size;
+    color: $white;
+    line-height: 1;
+    padding: 14.6rem 0 7.4rem 0;
+    z-index: 99;
+  }
+
+  &__container {
+    display: flex;
+    width: $main-width;
+    max-width: $max-width;
+    padding: 0 0 15.3rem 0;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    .client-one {
+      width: 16.6rem;
+    }
+
+    .client-two {
+      width: 18.5rem;
+    }
+
+    .client-three {
+      width: 17.9rem;
+    }
+
+    .client-four {
+      width: 16.4rem;
+    }
+
+    .client-five {
+      width: 10rem;
+    }
+
+    img {
+      background-position: center;
+      background-size: cover;
+
+      filter: brightness(0.6);
+      transition: filter 0.4s ease;
+
+      &:hover {
+        filter: brightness(1);
+      }
+    }
+  }
+}
+
+.bg-clients {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,45 @@
+.contact-banner {
+  position: relative;
+  height: 20rem;
+  background-color: $light-coral;
+
+  &__content {
+    width: 63.54%;
+    margin: auto;
+    max-width: $max-width;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__title {
+    font-size: $md-lg-font-size;
+    color: $sacramento-state-green;
+    z-index: 2;
+  }
+
+  &__contact-btn {
+    font-size: $sm-font-size;
+    font-weight: $sm-font-weight;
+    background: none;
+    color: $sacramento-state-green;
+    border: 0.2rem solid $sacramento-state-green;
+    width: 15rem;
+    height: 5rem;
+    border-radius: 4rem;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    z-index: 2;
+
+    &:hover {
+      background-color: $white;
+    }
+  }
+
+  .bg-home-6 {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+  }
+}
